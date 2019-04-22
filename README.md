@@ -1,7 +1,9 @@
 Thirukkural
 ============
 A python3 wrapper around the thirukkural
+
 Created by Vaasudevan Srinivasan <vaasuceg.96@gmail.com>
+
 Github Url: https://github.com/VaasuDevanS/thirukkural-cl
 
 Installation
