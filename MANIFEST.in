@@ -1,0 +1,4 @@
+include README.md
+include LICENSE.txt
+include thirukkural/__init__.py
+include thirukkural/kural.db
