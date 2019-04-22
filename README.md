@@ -3,7 +3,7 @@ Thirukkural
 A python3 module / command-line tool for Thirukkural  
 Created by Vaasudevan Srinivasan <vaasuceg.96@gmail.com>  
 Github Url: https://github.com/VaasuDevanS/thirukkural-cl  
-Version: 1.0
+Version: 1.1
 
 1. [Installation](https://github.com/VaasuDevanS/thirukkural-cl#installation)
 2. [Example Commands](https://github.com/VaasuDevanS/thirukkural-cl#example-commands)

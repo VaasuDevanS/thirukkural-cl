@@ -1,6 +1,6 @@
-Metadata-Version: 1.1
+Metadata-Version: 2.1
 Name: thirukkural
-Version: 1.0
+Version: 1.1
 Summary: Thirukkural for command-line and python module
 Home-page: https://github.com/VaasuDevanS/thirukkural-cl
 Author: Vaasudevan Srinivasan
@@ -11,7 +11,7 @@ Description: Thirukkural
         A python3 module / command-line tool for Thirukkural  
         Created by Vaasudevan Srinivasan <vaasuceg.96@gmail.com>  
         Github Url: https://github.com/VaasuDevanS/thirukkural-cl  
-        Version: 1.0
+        Version: 1.1
         
         1. [Installation](https://github.com/VaasuDevanS/thirukkural-cl#installation)
         2. [Example Commands](https://github.com/VaasuDevanS/thirukkural-cl#example-commands)
@@ -528,3 +528,4 @@ Classifier: Programming Language :: Python :: 3.4
 Classifier: Programming Language :: Python :: 3.5
 Classifier: Programming Language :: Python :: 3.6
 Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

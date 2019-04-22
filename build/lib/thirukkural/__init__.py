@@ -9,7 +9,7 @@ import sqlite3
 import random
 import sys
 
-__version__   = "1.0"
+__version__   = "1.1"
 __developer__ = 'Vaasudevan Srinivasan'
 
 DBFile = pkg_resources.resource_filename('thirukkural', 'kural.db')

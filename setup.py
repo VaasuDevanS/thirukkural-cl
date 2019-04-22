@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-__version__   = "1.0"
+__version__   = "1.1"
 
 CLASSIFIERS = [
     "Operating System :: OS Independent",
@@ -27,6 +27,7 @@ setup(name='thirukkural',
       packages=find_packages(),
       include_package_data=True,
       long_description=open('README.md').read(),
+      long_description_content_type='text/markdown',
       zip_safe=False,
       classifiers=CLASSIFIERS,
  )
