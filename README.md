@@ -18,7 +18,7 @@ $ thirukkural                | $ thirukkural -en
 $ thirukkural -k 100         | $ thirukkural -k 100 -en  
 $ thirukkural -a 10          | $ thirukkural -a 10 -en  
 $ thirukkural -a ilvaazhkkai | $ thirukkural -a 'domestic life'  
-$ thirukkural -a இல்வாழ்க்கை  |  $ thirukkural -i 5  
+$ thirukkural -a இல்வாழ்க்கை  | $ thirukkural -i 5  
 $ thirukkural -p 1           | $ thirukkural --all-paals  
 $ thirukkural --all-iyals    | $ thirukkural --all-adigaarams
 ```
@@ -390,8 +390,108 @@ $ thirukkural -s
 
 ```
 
+Python Usage
+============
+```python
+import thirukkural
+```
 
+Kural class object
+------------------
+```python
+>>> k = thirukkural.Kural(100)
+>>> print(k)                      # <100:இனியவைகூறல்>
+>>> print(dir(k))
+['__str__', 'adigaaram_en', 'adigaaram_no', 'adigaaram_ta', 'adigaaram_te', 'en_meaning',  
+'iyal_en', 'iyal_no', 'iyal_ta', 'iyal_te', 'kural_en', 'kural_ta', 'kural_te', 'no',  
+'paal_en', 'paal_no', 'paal_ta', 'paal_te', 'paapaya', 'varadarasan']
 
+```
 
+Adigaaram class object
+----------------------
+```python
+>>> a = thirukkural.Adigaaram(21)
+>>> a1 = thirukkural.Adigaaram(name='Dread of Evil Deeds')
+>>> a2 = thirukkural.Adigaaram(name='தீவினையச்சம்')
+>>> print(a, a1, a2)       		# (<21:தீவினையச்சம்>, <21:தீவினையச்சம்>, <21:தீவினையச்சம்>)
+>>> print(a.kurals)
+[<201:தீவினையச்சம்>, <202:தீவினையச்சம்>, <203:தீவினையச்சம்>, <204:தீவினையச்சம்>, <205:தீவினையச்சம்>,  
+<206:தீவினையச்சம்>, <207:தீவினையச்சம்>, <208:தீவினையச்சம்>, <209:தீவினையச்சம்>, <210:தீவினையச்சம்>]
 
+```
 
+Iyal class object
+-----------------
+```python
+>>> i = thirukkural.Iyal(5)
+>>> print(i)                      # <5:அரசியல்>
+>>> print(i.adigaarams)
+[<39:இறைமாட்சி>, <40:கல்வி>, <41:கல்லாமை>, <42:கேள்வி>, <43:அறிவுடைமை>, <44:குற்றங்கடிதல்>,  
+<45:பெரியாரைத் துணைக்கோடல்>, <46:சிற்றினஞ்சேராமை>, <47:தெரிந்துசெயல்வகை>, <48:வலியறிதல்>,  
+<49:காலமறிதல்>, <50:இடனறிதல்>, <51:தெரிந்துதெளிதல்>, <52:தெரிந்துவினையாடல்>, <53:சுற்றந்தழால்>,  
+<54:பொச்சாவாமை>, <55:செங்கோன்மை>, <56:கொடுங்கோன்மை>, <57:வெருவந்தசெய்யாமை>, <58:கண்ணோட்டம்>,  
+<59:ஒற்றாடல்>, <60:ஊக்கமுடைமை>, <61:மடியின்மை>, <62:ஆள்வினையுடைமை>, <63:இடுக்கணழியாமை>]
+```
+
+Paal class object
+------------------
+```python
+>>> p = thirukkural.Paal(3)
+>>> print(p)                     # <3:காமத்துப்பால்>
+>>> print(p.iyals)
+[<9:களவியல்>, <10:கற்பியல்>]
+
+>>> print(p.adigaarams)
+[<109:தகையணங்குறுத்தல்>, <110:குறிப்பறிதல்>, <111:புணர்ச்சிமகிழ்தல்>, <112:நலம்புனைந்துரைத்தல்>, <113:காதற்சிறப்புரைத்தல்>, <114:நாணுத்துறவுரைத்தல்>, <115:அலரறிவுறுத்தல்>, <116:பிரிவாற்றாமை>, <117:படர்மெலிந்திரங்கல்>, <118:கண்விதுப்பழிதல்>, <119:பசப்புறுபருவரல்>, <120:தனிப்படர்மிகுதி>, <121:நினைந்தவர்புலம்பல்>, <122:கனவுநிலையுரைத்தல்>, <123:பொழுதுகண்டிரங்கல்>, <124:உறுப்புநலனழிதல்>, <125:நெஞ்சொடுகிளத்தல்>, <126:நிறையழிதல்>, <127:அவர்வயின்விதும்பல்>, <128:குறிப்பறிவுறுத்தல்>, <129:புணர்ச்சிவிதும்பல்>, <130:நெஞ்சொடுபுலத்தல்>, <131:புலவி>, <132:புலவி நுணுக்கம்>, <133:ஊடலுவகை>]
+
+# returns all the kural objects in the given paal
+>>> print(p.kurals) 
+```
+
+Show all adigaarams, paals, Iyals
+---------------------------------
+```python
+>>> thirukkural.Paal.show_all_paals()
+>>> thirukkural.Iyal.show_all_iyals()
+>>> thirukkural.Adigaaram.show_all_adigaarams()
+```
+
+Show command line output inside python
+--------------------------------------
+```python
+>>> k = thirukkural.k(10)
+>>> k.showCL()
+
+பால்: பொருட்பால்(2/3) | இயல்: ஒழிபியல்(8/10) | அதிகாரம்: பண்புடைமை(100/133)
+
+குறள்-1000:
+பண்பிலான் பெற்ற பெருஞ்செல்வம் நன்பால்
+கலந்தீமை யால்திரிந் தற்று.
+
+paNpilaan petra perunjelvam nanpaal
+kalandheemai yaaldhirinh thatru
+
+மு.வ உரை:
+பண்பு இல்லாதவன் பெற்ற பெரிய செல்வம், வைத்த கலத்தின் தீமையால் நல்ல பால்
+தன் சுவை முதலியன கெட்டாற் போன்றதாகும்.
+
+சாலமன் பாப்பையா உரை:
+நல்ல பண்பு இல்லாதவன் அடைந்த பெரும் செல்வம், பாத்திரக் கேட்டால்
+அதிலுள்ள நல்ல பால் கெட்டுப் போவது போலாம்.
+
+>>> k.showCL(lang="en")
+
+Category: Wealth(2/3) | Sub-Category: Miscellaneous(8/10) | Chapter: Courtesy(100/133)
+
+Verse-1000:
+Like sweet milk soured because in filthy vessel poured,
+Is ample wealth in churlish man's unopened coffers stored.
+
+Meaning:
+The great wealth obtained by one who has no goodness will perish like
+pure milk spoilt by the impurity of the vessel.
+
+```
+
+The above method showCL() applies to -a, -i, -p flags as well
