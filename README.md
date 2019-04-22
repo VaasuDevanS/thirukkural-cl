@@ -5,6 +5,21 @@ Created by Vaasudevan Srinivasan <vaasuceg.96@gmail.com>
 Github Url: https://github.com/VaasuDevanS/thirukkural-cl  
 Version: 1.0
 
+1. [Installation](https://github.com/VaasuDevanS/thirukkural-cl#installation)
+2. [Example Commands](https://github.com/VaasuDevanS/thirukkural-cl#example-commands)
+3. [Command Line Usage](https://github.com/VaasuDevanS/thirukkural-cl#command-line-usage)
+    * [Display kural](https://github.com/VaasuDevanS/thirukkural-cl#display-a-random-thirukkural)
+    * [Display all the kurals in given Adigaaram](https://github.com/VaasuDevanS/thirukkural-cl#show-kurals-in-the-given-adigaaram)
+    * [Display all the adigaarams in given Iyal](https://github.com/VaasuDevanS/thirukkural-cl#show-adigaarams-in-the-given-iyal)
+    * [Display all the iyals in given Paal](https://github.com/VaasuDevanS/thirukkural-cl#show-iyals-in-the-given-paal)
+    * [Display all Paal, Iyal and Adigaaram](https://github.com/VaasuDevanS/thirukkural-cl#show-all-paals)
+    * [Show Thiruvalluvar](https://github.com/VaasuDevanS/thirukkural-cl#show-thiruvalluvar)
+4. [Python Usage]()  
+    * [Kural object](https://github.com/VaasuDevanS/thirukkural-cl#kural-class-object)
+    * [Adigaaram object](https://github.com/VaasuDevanS/thirukkural-cl#adigaaram-class-object)
+    * [Iyal object](https://github.com/VaasuDevanS/thirukkural-cl#iyal-class-object)
+    * [Paal object](https://github.com/VaasuDevanS/thirukkural-cl#paal-class-object) 
+
 Installation
 ============
 ```console
@@ -494,4 +509,5 @@ pure milk spoilt by the impurity of the vessel.
 
 ```
 
-The above method showCL() applies to -a, -i, -p flags as well
+The above method showCL() applies to Adigaaram, Paal and Iyal objects as well
+
