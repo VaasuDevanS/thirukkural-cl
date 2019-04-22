@@ -331,9 +331,9 @@ def main():
 
     Help = {
         'des': "Thirukkural by Thiruvalluvar",
-          'a': "display the ten thirukurals in the specified chapter",
+          'a': "display the ten Thirukurals in the specified chapter",
           'k': "display the Thirukural and its meaning",
-          'i': "display the adigaarams in the specified Iyal",
+          'i': "display the Adigaarams in the specified Iyal",
           'p': "display the Iyals in the specified Paal",
 
           'v': "show version info and exit",
