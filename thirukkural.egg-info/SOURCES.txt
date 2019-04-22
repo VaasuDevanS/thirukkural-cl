@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+thirukkural/__init__.py
+thirukkural/kural.db
+thirukkural.egg-info/PKG-INFO
+thirukkural.egg-info/SOURCES.txt
+thirukkural.egg-info/dependency_links.txt
+thirukkural.egg-info/entry_points.txt
+thirukkural.egg-info/not-zip-safe
+thirukkural.egg-info/top_level.txt
