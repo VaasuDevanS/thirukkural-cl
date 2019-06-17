@@ -29,13 +29,13 @@ $ pip3 install thirukkural
 Example commands
 ================
 ```console
-$ thirukkural                | $ thirukkural -en  
-$ thirukkural -k 100         | $ thirukkural -k 100 -en  
-$ thirukkural -a 10          | $ thirukkural -a 10 -en  
-$ thirukkural -a ilvaazhkkai | $ thirukkural -a 'domestic life'  
-$ thirukkural -a இல்வாழ்க்கை  | $ thirukkural -i 5  
-$ thirukkural -p 1           | $ thirukkural --all-paals  
-$ thirukkural --all-iyals    | $ thirukkural --all-adigaarams
+$ thirukkural                    | $ thirukkural -en  
+$ thirukkural -k 100             | $ thirukkural -k 100 -en  
+$ thirukkural -a 10              | $ thirukkural -a 10 -en  
+$ thirukkural -a ilvaazhkkai     | $  thirukkural -a இல்வாழ்க்கை
+$ thirukkural -a 'domestic life' | $ thirukkural -i 5  
+$ thirukkural -p 1               | $ thirukkural --all-paals  
+$ thirukkural --all-iyals        | $ thirukkural --all-adigaarams
 ```
 
 ```console
@@ -475,7 +475,7 @@ Show all adigaarams, paals, Iyals
 Show command line output inside python
 --------------------------------------
 ```python
->>> k = thirukkural.k(10)
+>>> k = thirukkural.Kural(10)
 >>> k.showCL()
 
 பால்: பொருட்பால்(2/3) | இயல்: ஒழிபியல்(8/10) | அதிகாரம்: பண்புடைமை(100/133)
