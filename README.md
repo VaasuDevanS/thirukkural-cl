@@ -32,7 +32,7 @@ Example commands
 $ thirukkural                    | $ thirukkural -en  
 $ thirukkural -k 100             | $ thirukkural -k 100 -en  
 $ thirukkural -a 10              | $ thirukkural -a 10 -en  
-$ thirukkural -a ilvaazhkkai     | $  thirukkural -a இல்வாழ்க்கை
+$ thirukkural -a ilvaazhkkai     | $ thirukkural -a இல்வாழ்க்கை
 $ thirukkural -a 'domestic life' | $ thirukkural -i 5  
 $ thirukkural -p 1               | $ thirukkural --all-paals  
 $ thirukkural --all-iyals        | $ thirukkural --all-adigaarams
